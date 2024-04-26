@@ -7,6 +7,14 @@
 /[Ll]ogs/                 # Carpeta de registros
 /[Uu]ser[Ss]ettings/      # Configuraciones de usuario
 
+/Library/              # Carpeta de la biblioteca de Unity
+/Temp/                 # Carpeta temporal
+/Obj/                  # Carpeta de objetos generados
+/Build/                # Carpeta de construcción
+/Builds/               # Otra carpeta de construcción
+/Logs/                 # Carpeta de registros
+/UserSettings/      # Configuraciones de usuario
+
 # Cache
 .vs/                      # Carpeta de caché de Visual Studio
 .gradle/                  # Carpeta de caché de Gradle
@@ -48,6 +56,9 @@ crashlytics-build.properties  # Archivo generado por Crashlytics
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta  # Archivos metadatos de Android generados temporalmente
 /[Aa]ssets/[Ss]treamingAssets/aa/*      # Carpeta de activos de transmisión generados temporalmente
+
+/Assets/StreamingAssets/aa.meta  # Archivos metadatos de Android generados temporalmente
+/Assets/StreamingAssets/aa/*      # Carpeta de activos de transmisión generados temporalmente
 
 
 # Mac configuration files
