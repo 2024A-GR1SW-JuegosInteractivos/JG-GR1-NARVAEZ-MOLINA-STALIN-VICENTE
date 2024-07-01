@@ -3,7 +3,7 @@ using UnityEngine;
 public class CarController : MonoBehaviour
 {
     public float speed = 10f;
-    public float turnSpeed = 50f;
+    public float turnSpeed = 80f;
     public string horizontalInputName = "Horizontal";
     public string verticalInputName = "Vertical";
 
@@ -12,8 +12,10 @@ public class CarController : MonoBehaviour
         float horizontal = Input.GetAxis(horizontalInputName);
         float vertical = Input.GetAxis(verticalInputName);
 
-        Vector3 movement = transform.right * vertical * speed * Time.deltaTime;
-        Vector3 rotation = Vector3.back * horizontal * turnSpeed * Time.deltaTime;
+        // Movimiento hacia adelante y hacia atrás
+        Vector3 movement = transform.up * vertical * speed * Time.deltaTime;
+        // Rotación
+        Vector3 rotation = Vector3.forward * -horizontal * turnSpeed * Time.deltaTime;
 
         transform.Translate(movement, Space.World);
         transform.Rotate(rotation, Space.World);
